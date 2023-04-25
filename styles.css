@@ -54,3 +54,8 @@ body {
   button:hover {
     opacity: 0.8;
   }
+
+  #status-text {
+    margin-top: 10px;
+    font-weight: bold;
+  }
