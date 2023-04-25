@@ -21,6 +21,8 @@
 	  toggleProxyButton.innerText = "Disconnect";
 	  toggleProxyButton.classList.add("disable-proxy");
 	  toggleProxyButton.classList.remove("enable-proxy");
+
+	  document.getElementById("connected-animation").beginElement();
 	} else {
 	//   document.getElementById("locked").style.display = "block";
 	//   document.getElementById("unlocked").style.display = "none";
@@ -28,6 +30,8 @@
 	  toggleProxyButton.innerText = "Connect now!";
 	  toggleProxyButton.classList.remove("disable-proxy");
 	  toggleProxyButton.classList.add("enable-proxy");
+
+	  document.getElementById("not-connected-animation").beginElement();
 	}
   }
 

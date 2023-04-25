@@ -1,49 +1,53 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0 0 20px;
+  color: #333;
+}
   
-  .container {
-    width: 280px;
-    padding: 15px;
-    box-sizing: border-box;
-  }
-  
-  h1 {
-    margin: 0 0 15px;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .form-group {
-    margin-bottom: 10px;
-  }
-  
-  label {
-    display: block;
-    font-size: 14px;
-    margin-bottom: 5px;
-  }
-  
-  input {
-    width: 100%;
-    height: 30px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    font-size: 14px;
-    padding: 0 5px;
-  }
-  
-  button {
-    height: 30px;
-    font-size: 14px;
-    font-weight: bold;
-    padding: 0 10px;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
+svg {
+  margin-bottom: 20px;
+}
+
+#status-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#toggle-proxy {
+  background-color: #2196F3;
+  border: none;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  padding: 10px 24px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
 
   .enable-proxy {
     background-color: #28a745;
@@ -53,11 +57,24 @@ body {
     background-color: #6c757d;
   }
   
-  button:hover {
-    opacity: 0.8;
+  #toggle-proxy:hover {
+    background-color: #1976D2;
   }
 
-  #status-text {
-    margin-top: 10px;
-    font-weight: bold;
+  .logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+
+  #check-ip {
+    font-size: 10px;
+    color: #2196F3;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  #check-ip:hover {
+    color: #1976D2;
   }
