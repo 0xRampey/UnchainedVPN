@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "Unchained VPN",
-	"description": "Route your browsing through a specified proxy server",
+	"description": "Decentralising internet privacy",
 	"version": "0.1",
 	"background": {
 		"scripts": ["background.js"]
