@@ -1,7 +1,7 @@
 
   document.getElementById('toggle-proxy').addEventListener('click', () => {
-	const server = "kqfuap25bpc33cvn56g08shs4g.ingress.boxedcloud.net";
-	const port = 31534;
+	const server = "5c2dcr974ddf3bk209rqepmve8.ingress.boxedcloud.net";
+	const port = 30355;
 	chrome.storage.sync.get("proxyEnabled", (data) => {
 		const newStatus = !data.proxyEnabled;
 		if (newStatus) {
